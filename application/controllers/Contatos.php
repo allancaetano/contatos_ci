@@ -101,10 +101,10 @@ class Contatos extends CI_Controller {
         $obj_email->Port = 587;
         $obj_email->SMTPSecure = 'tls';
         $obj_email->SMTPAuth = TRUE;
-        $obj_email->Username = "allansantoscaetano@gmail.com";
-        $obj_email->Password = "22917553478";
-        $obj_email->setFrom("allansantoscaetano@gmail.com", "Lembrete de Contato");
-        $obj_email->addAddress("allansantos_caetano@hotmail.com");
+        $obj_email->Username = "user@gmail.com";
+        $obj_email->Password = "password";
+        $obj_email->setFrom("user@gmail.com", "Lembrete de Contato");
+        $obj_email->addAddress("user@provedor.com");
         $obj_email->CharSet = "utf-8";
         $obj_email->Subject = "Lembrete de Contato";
         $obj_email->msgHTML($mensagem);
